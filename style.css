@@ -36,14 +36,14 @@ a {
     color: #C2C8CC;
 }
 
-.left ul {
+.social-medias ul {
     display: flex;
     margin: 10px;
     gap: 10px;
     justify-content: end;
 }
 
-.left {
+.social-medias {
     grid-column: 1;
     grid-row: 1;
     align-content: center;
@@ -68,14 +68,14 @@ a {
     margin: 8px;
 }
 
-.right ul {
+.buttons ul {
     display: flex;
     margin: 10px;
     gap: 10px;
     justify-content: start;
 }
 
-.right {
+.buttons {
     grid-column: 3;
     grid-row: 1;
     align-content: center;
@@ -93,14 +93,20 @@ a {
         grid-row: 1;
     }
 
-    .right {
+    .buttons {
+        grid-column: 1;
+        grid-row: 2;
+        justify-content: end;
+        display: flex;
+        align-items: center;
+    }
+
+    .social-medias {
         grid-column: 1;
         grid-row: 2;
         justify-content: start;
-    }
-
-    .left {
-        grid-row: 2;
+        display: flex;
+        align-items: center;
     }
 
 
