@@ -14,6 +14,8 @@
 
 body {
     font-family: 'Minerva Modern Bold';
+    background-color: #3D4435;
+    color: #C2C8CC;
 }
 
 ul {
@@ -25,11 +27,15 @@ a {
     color: inherit;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
 .header {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 1fr;
-    background-color: #3D4435;
     color: #C2C8CC;
 }
 
@@ -100,7 +106,6 @@ a {
     grid-column: 2;
     padding: 15px;
     justify-content: center;
-    
 }
 
 .intro-text h3, .intro-text h1 {
@@ -110,11 +115,18 @@ a {
 
 .intro-text h3 {
     padding: 10px;
-    font-size: 25px;
+    font-size: 18px;
 }
 
 .intro-text h1 {
     font-size: 40px;
+}
+
+.main-image {
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 80%;
 }
 
 @media (max-width: 768px) {
@@ -127,8 +139,6 @@ a {
     .middle {
         grid-row: 1;
     }
-
-    
 
     .buttons {
         grid-column: 1;
@@ -160,5 +170,9 @@ a {
         font-size: 35px;
         padding-bottom: 15px;
     }
-    
+
+    .main-image {
+        width: 100%;
+        height: 250px;
+    }
 }
