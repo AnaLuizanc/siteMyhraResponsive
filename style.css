@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 1px solid red;
+}
+
+@font-face {
+    font-family: 'Minerva Modern Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Minerva Modern Bold'), url('./fonts/MinervaModern\ Bold.woff') format('woff');
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Minerva Modern Bold', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: #3D4435;
+    color: #C2C8CC;
+}
+
+.left ul {
+    display: flex;
+    margin: 10px;
+    gap: 10px;
+    justify-content: end;
+}
+
+.left {
+    grid-column: 1;
+    grid-row: 1;
+    align-content: center;
+
+}
+
+.middle {
+    display: grid;
+}
+
+.top h1 {
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
+.bottom ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 8px;
+}
+
+.right ul {
+    display: flex;
+    margin: 10px;
+    gap: 10px;
+    justify-content: start;
+}
+
+.right {
+    grid-column: 3;
+    grid-row: 1;
+    align-content: center;
+
+}
+
+@media (max-width: 768px) {
+    .header {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        text-align: center;
+    }
+
+    .middle {
+        grid-row: 1;
+    }
+
+    .right {
+        grid-column: 1;
+        grid-row: 2;
+        justify-content: start;
+    }
+
+    .left {
+        grid-row: 2;
+    }
+
+
+    
+}
