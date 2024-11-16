@@ -2,7 +2,6 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    border: 1px solid red;
 }
 
 @font-face {
@@ -124,6 +123,55 @@ img {
     object-position: 50% 80%;
 }
 
+.body-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+}
+
+.body-page h2 {
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
+.body-page h1 {
+    grid-column: span 3;
+    grid-row: 1;
+    align-content: center;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.body-page p {
+    width: 70%;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+    padding: 8px;
+    line-height: 1.5;
+}
+
+.body-page a {
+    margin: 20px 10px;
+    text-decoration: underline;
+}
+
+.first {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.second {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.third {
+    grid-column: 3;
+    grid-row: 2;
+}
+
 @media (max-width: 768px) {
     .header {
         grid-template-columns: 1fr;
@@ -165,5 +213,20 @@ img {
     .main-image {
         width: 100%;
         height: 250px;
+    }
+
+    .body-page {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .body-page h1 {
+        font-size: 35px;
+        padding: 15px;
+    }
+
+    .body-page div {
+        margin: 10px;
     }
 }
