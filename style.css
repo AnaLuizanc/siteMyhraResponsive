@@ -97,7 +97,7 @@ hr {
     padding: 10px;
 }
 
-.workwm {
+.workwm, .right button {
     background-color: #C2C8CC;
     border: #3D4435;
     padding: 10px;
@@ -179,22 +179,22 @@ hr {
     grid-row: 2;
 }
 
-.orient-page {
+.nutrition-page {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    height: 80vh;
+    height: 70vh;
     width: auto;
     margin: 30px;
 }
 
-.orient-page h3 {
+.nutrition-page h3, .coaching-page h3 {
     text-transform: uppercase;
     font-size: 23px;
     margin-bottom: 20px;
 }
 
-.orient-page p {
+.nutrition-page p, .coaching-page p {
     font-size: 18px;
     line-height: 1.5;
 }
@@ -204,7 +204,7 @@ hr {
     grid-row: 1;
 }
 
-.col1-row1 h3 {
+.col1-row1 h3, .left h3 {
     padding: 15px;
     margin: 0px 15px;
     padding-left: 0;
@@ -217,7 +217,7 @@ hr {
     justify-items: left;
 }
 
-.col2-row1 h2 {
+.col2-row1 h2, .right h2 {
     padding: 15px 0px;
     margin: 0px 15px;
     padding-left: 0;
@@ -254,6 +254,28 @@ hr {
 
 .card1 .card2 {
     gap: 15px;
+}
+
+.coaching-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px;
+}
+
+.coaching-page img {
+    height: 400px;
+    width: 50%;
+    object-fit: cover;
+    object-position: 50% 80%;
+}
+
+.right p {
+    margin: 30px 0px;
+    text-align: left;
+}
+
+.right button {
+    padding: 15px 50px;
 }
 
 @media (max-width: 768px) {
