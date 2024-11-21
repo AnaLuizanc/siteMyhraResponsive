@@ -2,7 +2,6 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    border: 1px solid red;
 }
 
 @font-face {
@@ -217,7 +216,7 @@ hr {
     justify-items: left;
 }
 
-.col2-row1 h2, .right h2 {
+.col2-row1 h2, .right h2, .footer h2{
     padding: 15px 0px;
     margin: 0px 15px;
     padding-left: 0;
@@ -298,6 +297,32 @@ hr {
 .recipes-page figcaption {
     padding: 20px 0px; 
     font-size: 18px;
+}
+
+.footer {
+    background-color: #C2C8CC;
+    color: black;
+    justify-items: center;
+    justify-content: center;
+}
+
+.footer h2 {
+    padding: 40px 0px;
+    margin-right: 0;
+}
+
+.footer button {
+    background-color: black;
+    color: white;
+}
+
+.footer input, .footer button{
+    padding: 20px;
+    margin: 10px;
+}
+
+.footer form {
+    padding-bottom: 30px;
 }
 
 @media (max-width: 768px) {
