@@ -188,7 +188,7 @@ hr {
     margin: 30px;
 }
 
-.nutrition-page h3, .coaching-page h3 {
+.nutrition-page h3, .coaching-page h3, .recipes-page h3 {
     text-transform: uppercase;
     font-size: 23px;
     margin-bottom: 20px;
@@ -204,7 +204,7 @@ hr {
     grid-row: 1;
 }
 
-.col1-row1 h3, .left h3 {
+.col1-row1 h3, .left h3, .recipes-page h3 {
     padding: 15px;
     margin: 0px 15px;
     padding-left: 0;
@@ -276,6 +276,28 @@ hr {
 
 .right button {
     padding: 15px 50px;
+}
+
+.recipes-page {
+    margin: 30px
+}
+
+.recipes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recipes-page h3 {
+    padding-left: 0px;
+}
+
+.recipes-page img {
+    height: 350px;
+    width: 100%;
+}
+.recipes-page figcaption {
+    padding: 20px 0px; 
+    font-size: 18px;
 }
 
 @media (max-width: 768px) {
