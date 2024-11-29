@@ -342,6 +342,10 @@ a {
     color: white;
 }
 
+p {
+    width: 70%;
+}
+
 .header a {
     color: inherit;
 }
