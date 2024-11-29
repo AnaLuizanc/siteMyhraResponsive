@@ -96,7 +96,8 @@ hr {
     padding: 10px;
 }
 
-.workwm, .right button {
+.workwm,
+.right button {
     background-color: #C2C8CC;
     border: #3D4435;
     padding: 10px;
@@ -108,7 +109,8 @@ hr {
     justify-content: center;
 }
 
-.intro-text h3, .intro-text h1 {
+.intro-text h3,
+.intro-text h1 {
     text-align: center;
     text-transform: uppercase;
 }
@@ -182,18 +184,21 @@ hr {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    height: 70vh;
+    height: 73vh;
     width: auto;
     margin: 30px;
 }
 
-.nutrition-page h3, .coaching-page h3, .recipes-page h3 {
+.nutrition-page h3,
+.coaching-page h3,
+.recipes-page h3 {
     text-transform: uppercase;
     font-size: 23px;
     margin-bottom: 20px;
 }
 
-.nutrition-page p, .coaching-page p {
+.nutrition-page p,
+.coaching-page p {
     font-size: 18px;
     line-height: 1.5;
 }
@@ -203,7 +208,9 @@ hr {
     grid-row: 1;
 }
 
-.col1-row1 h3, .left h3, .recipes-page h3 {
+.col1-row1 h3,
+.left h3,
+.recipes-page h3 {
     padding: 15px;
     margin: 0px 15px;
     padding-left: 0;
@@ -216,7 +223,9 @@ hr {
     justify-items: left;
 }
 
-.col2-row1 h2, .right h2, .footer h2{
+.col2-row1 h2,
+.right h2,
+.footer h2 {
     padding: 15px 0px;
     margin: 0px 15px;
     padding-left: 0;
@@ -229,17 +238,17 @@ hr {
     display: flex;
     text-decoration: underline;
     padding: 15px 0px;
-    
+
 }
 
 .row2 {
     grid-column: span 2;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1;
 }
 
-.row2.card1 img{
+.row2.card1 img {
     grid-column: span 2;
 }
 
@@ -294,8 +303,9 @@ hr {
     height: 350px;
     width: 100%;
 }
+
 .recipes-page figcaption {
-    padding: 20px 0px; 
+    padding: 20px 0px;
     font-size: 18px;
 }
 
@@ -316,13 +326,24 @@ hr {
     color: white;
 }
 
-.footer input, .footer button{
+.footer input,
+.footer button {
     padding: 20px;
     margin: 10px;
+    border: none;
 }
 
 .footer form {
     padding-bottom: 30px;
+}
+
+p,
+a {
+    color: white;
+}
+
+.header a {
+    color: inherit;
 }
 
 @media (max-width: 768px) {
@@ -382,4 +403,34 @@ hr {
     .body-page div {
         margin: 10px;
     }
+
+    .nutrition-page,
+    .coaching-page,
+    .recipes {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .row2 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .row2 img,
+    .left img,
+    .recipes img {
+        height: 250px;
+        width: 250px;
+        object-fit: cover;
+        object-position: center;
+        margin: 20px 0px;
+    }
+
+    .nutrition-page h3,
+    .coaching-page h3,
+    .recipes-page h3 {
+        padding: 15px 0px;
+    }
+
 }
