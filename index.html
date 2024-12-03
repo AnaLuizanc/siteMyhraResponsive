@@ -10,39 +10,21 @@
 </head>
 
 <body>
-    <div class="header">
-        <div class="social-medias">
-            <ul>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-square-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-youtube"></i></a>
-            </ul>
-        </div>
-        <div class="middle">
-            <div class="top">
-                <h1>bem-estar com myhra</h1>
-            </div>
-            <div class="bottom">
-                <ul>
-                    <li><a href="">Sobre</a></li>
-                    <li><a href="">Serviços</a></li>
-                    <li><a href="">Coaching</a></li>
-                    <li><a href="">Receitas</a></li>
-                    <li><a href="">Contato</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="buttons">
-            <ul>
-                <button class="login-button">Entrar</button>
-                <button class="workwm">Trabalhe comigo</button>
-            </ul>
-        </div>
-        <div class="intro-text">
-            <h3>sua guia certifica para</h3>
-            <h1>nutrição consciente <br> como modo de vida</h1>
-        </div>
+    <div id="header-placeholder"></div>
+    
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+    </script>
+
+    <div class="intro-text">
+        <h3>sua guia certifica para</h3>
+        <h1>nutrição consciente <br> como modo de vida</h1>
     </div>
+
     <img src="./image/fundo1.jpg" class="main-image" alt="">
 
     <div class="body-page">
