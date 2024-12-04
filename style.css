@@ -97,7 +97,8 @@ hr {
 }
 
 .workwm,
-.right button {
+.right button,
+#submit-btn {
     background-color: #C2C8CC;
     border: #3D4435;
     padding: 10px;
@@ -349,6 +350,74 @@ p {
 .header a {
     color: inherit;
 }
+
+.contact-page .header,
+.contact-page .content-container,
+.contact-page .login-button {
+    background-color: #C2C8CC;
+    color: black;
+}
+
+.contact-page .workwm,
+#submit-btn {
+    background-color: black;
+    color: #C2C8CC;
+}
+
+.contact-page .content-container {
+    height: 100vh;
+    padding: 60px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-page .left {
+    grid-column: 1;
+}
+
+.contact-page .right {
+    grid-column: 2;
+}
+
+.contact-page .content-container h3 {
+    text-transform: uppercase;
+    font-size: 23px;
+}
+
+.contact-page .content-container p {
+    color: black;
+}
+
+.contact-page .content-container a {
+    color: black;
+    text-decoration: underline;
+}
+
+.content-container #name, #lastname, #email {
+    padding: 10px;
+    width: 35%;
+}
+
+.content-container #subject {
+    padding: 10px;
+    width: 70%;
+}
+
+.content-container #message {
+    padding: 10px;
+    width: 80%;
+    height: 200px;
+}
+
+.contact-page .non-cb {
+    display: flex;
+    flex-direction: column;
+}
+
+#require-message {
+    color: #929292;
+}
+
 
 @media (max-width: 768px) {
     .header {

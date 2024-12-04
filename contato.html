@@ -12,11 +12,54 @@
     
     <script>
         fetch('header.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('header-placeholder').innerHTML = data;
-            });
-    </script>
-    
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-placeholder').innerHTML = data;
+        });
+        </script>
+        <div class="content-container">
+            <div class="left">
+                <h3>fale comigo</h3>
+                <p>Para perguntas relativas a eventos ou imprensa, fale conosco aqui. Se tiver interessado em coaching particular, <a href="">agende agora uma consulta gratuita.</a></p>
+            </div>
+            <div class="right">
+                <form action="pagina.php" method="post">
+                    <div class="non-cb">
+                        <label for="name">Nome <label for="message" id="require-message">(obrigatório)</label></label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div class="non-cb">
+                        <label for="lastname">Sobrenome <label for="message" id="require-message">(obrigatório)</label></label>
+                        <input type="text" id="lastname" name="lastname">
+                    </div>
+                    <div class="non-cb">
+                        <label for="email">E-mail <label for="message" id="require-message">(obrigatório)</label></label>
+                        <input type="text" id="email" name="email">
+                    </div>
+                    <div class="non-cb">
+                        <label for="subject">Assunto <label for="message" id="require-message">(obrigatório)</label></label>
+                        <input type="text" id="subject" name="subject">
+                    </div>
+                    <div class="non-cb">
+                        <label for="message">Mensagem <label for="message" id="require-message">(obrigatório)</label></label>
+                        <input type="text" id="message" name="message" class="text-input">
+                    </div>
+                    <div>
+
+                        <label for="">Perguntando sobre</label><br>
+                        <input type="checkbox" id="" name="" value="">
+                        <label for="">Serviços</label><br>
+                        <input type="checkbox" id="" name="" value="">
+                        <label for="">Eventos corporativos</label><br>
+                        <input type="checkbox" id="" name="" value="">
+                        <label for="">Eventos em grupo</label><br>
+                    </div>
+                    <input type="submit" id="submit-btn" value="Submit">
+                        
+                </form>
+
+            </div>
+        </div>
+    </div>
 </body>
 </html>
