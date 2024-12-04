@@ -365,7 +365,7 @@ p {
 }
 
 .contact-page .content-container {
-    height: 100vh;
+    height: 120vh;
     padding: 60px 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -393,7 +393,9 @@ p {
     text-decoration: underline;
 }
 
-.content-container #name, #lastname, #email {
+.content-container #name,
+#lastname,
+#email {
     padding: 10px;
     width: 35%;
 }
@@ -416,6 +418,12 @@ p {
 
 #require-message {
     color: #929292;
+}
+
+#footer-placeholder {
+    grid-column: span 2;
+    justify-content: center;
+    align-items: center;
 }
 
 

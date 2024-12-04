@@ -11,7 +11,7 @@
 
 <body>
     <div id="header-placeholder"></div>
-    
+
     <script>
         fetch('header.html')
             .then(response => response.text())
@@ -110,14 +110,14 @@
             </div>
         </div>
     </div>
-    <div class="footer">
-        <h2>não perca nenhuma receita</h2>
-        <form action="pagina.php" method="post">
-            <input type="email" placeholder="Endereço de e-mail">
-            <button>Cadastre-se</button>
-        </form>
-    </div>
-
+    <div id="footer-placehold"></div>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
 </body>
 
 </html>
