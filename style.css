@@ -430,6 +430,10 @@ form input {
     border: 1px solid #929292;
 }
 
+textarea:hover, input:hover {
+    background-color: #e6e6e6;
+}
+
 .field-form, .cb-area {
     padding: 10px 0;
 }
