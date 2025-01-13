@@ -12,7 +12,7 @@
 }
 
 body {
-    font-family: 'Minerva Modern Bold';
+    font-family: 'Minerva Modern Bold', sans-serif;
     background-color: #3D4435;
     color: #C2C8CC;
 }
@@ -310,7 +310,7 @@ hr {
     font-size: 18px;
 }
 
-.footer {
+.footer{
     background-color: #C2C8CC;
     color: black;
     justify-items: center;
@@ -366,13 +366,14 @@ p {
 
 .contact-page .content-container {
     height: 120vh;
-    padding: 60px 30px;
+    padding: 60px 150px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
 .contact-page .left {
     grid-column: 1;
+    width: 70%;
 }
 
 .contact-page .right {
@@ -381,11 +382,13 @@ p {
 
 .contact-page .content-container h3 {
     text-transform: uppercase;
-    font-size: 23px;
+    font-size: 46px;
 }
 
 .contact-page .content-container p {
     color: black;
+    font-size: 18px;
+    margin-top: 20px;
 }
 
 .contact-page .content-container a {
@@ -411,13 +414,30 @@ p {
     height: 200px;
 }
 
-.contact-page .non-cb {
+.contact-page .field-form {
     display: flex;
     flex-direction: column;
 }
 
+.field-form.name {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+}
+
+form input {
+    border: 1px solid #929292;
+}
+
+.field-form, .cb-area {
+    padding: 10px 0;
+}
+
 #require-message {
     color: #929292;
+    font-weight: lighter;
+    font-size: 14px;
 }
 
 #footer-placeholder {
